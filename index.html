@@ -4,45 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Satya Theegela - Developer Portfolio</title>
-  <!-- Import Google Icon Font and Materialize CSS -->
+  <!-- Google Fonts & Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
   <style>
-    header, footer { background: #212121; color: #fff; }
-    .section { padding: 4rem 0; }
-    .repo-card { margin-bottom: 20px; }
+    body { font-family: 'Roboto', sans-serif; }
+    header, footer { background: #4285F4; color: #fff; }
+    .hero { padding: 4rem 0; }
     .avatar {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
-      margin-bottom: 20px;
       border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
     }
+    .card { border-radius: 12px; }
+    .btn-google {
+      background: #34A853;
+      border-radius: 24px;
+    }
+    .btn-google:hover { background: #2c8c46; }
+    h4 { color: #202124; font-weight: 500; }
+    .section { padding: 3rem 0; }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="black">
+  <nav class="blue">
     <div class="nav-wrapper container">
       <a href="#!" class="brand-logo">Satya</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#repos">Repositories</a></li>
+        <li><a href="#repos">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="section center-align">
-    <!-- Add your display picture here -->
+  <header class="hero center-align">
     <img src="https://avatars.githubusercontent.com/u/63450533?v=4" alt="Satya Theegela" class="avatar">
-    <h1>Satya Venkata Medhi Theegela</h1>
+    <h3>Satya Theegela</h3>
     <p>Software Engineer | Java | Security | Cloud | Solution Architect</p>
-    <a href="#repos" class="btn waves-effect waves-light deep-purple">View My Work</a>
+    <a href="#repos" class="btn btn-google waves-effect waves-light">Explore My Work</a>
   </header>
 
   <!-- About -->
@@ -59,12 +69,12 @@
     <div class="container">
       <h4>Skills</h4>
       <div class="row">
-        <div class="col s6 m4"><i class="material-icons">code</i> Java, Spring Boot</div>
-        <div class="col s6 m4"><i class="material-icons">web</i> AngularJS, ReactJS</div>
-        <div class="col s6 m4"><i class="material-icons">cloud</i> AWS, OpenShift</div>
-        <div class="col s6 m4"><i class="material-icons">storage</i> MySQL, PostgreSQL, Oracle</div>
-        <div class="col s6 m4"><i class="material-icons">sync</i> Apache Kafka</div>
-        <div class="col s6 m4"><i class="material-icons">security</i> Blockchain (Emurgo Certified)</div>
+        <div class="col s6 m4"><i class="material-icons blue-text">code</i> Java, Spring Boot</div>
+        <div class="col s6 m4"><i class="material-icons red-text">web</i> AngularJS, ReactJS</div>
+        <div class="col s6 m4"><i class="material-icons green-text">cloud</i> AWS, OpenShift</div>
+        <div class="col s6 m4"><i class="material-icons orange-text">storage</i> MySQL, PostgreSQL, Oracle</div>
+        <div class="col s6 m4"><i class="material-icons purple-text">sync</i> Apache Kafka</div>
+        <div class="col s6 m4"><i class="material-icons teal-text">security</i> Blockchain (Emurgo Certified)</div>
       </div>
     </div>
   </section>
@@ -73,29 +83,29 @@
   <section id="repos" class="section container">
     <h4>Featured Projects</h4>
     <div class="row">
-      <div class="col s12 m6 repo-card">
-        <div class="card">
+      <div class="col s12 m6">
+        <div class="card z-depth-2">
           <div class="card-content">
             <span class="card-title">Solidity-Projects</span>
             <p>Smart contract code samples.</p>
           </div>
           <div class="card-action">
-            <a href="https://github.com/satyamadhav44/Solidity-Projects">View Repo</a>
+            <a href="https://github.com/satyamadhav44/Solidity-Projects" class="blue-text">View Repo</a>
           </div>
         </div>
       </div>
-      <div class="col s12 m6 repo-card">
-        <div class="card">
+      <div class="col s12 m6">
+        <div class="card z-depth-2">
           <div class="card-content">
             <span class="card-title">HLF-MedicalDecentrilazation</span>
             <p>Consortium blockchain for healthcare.</p>
           </div>
           <div class="card-action">
-            <a href="https://github.com/satyamadhav44/HLF-MedicalDecentrilazation">View Repo</a>
+            <a href="https://github.com/satyamadhav44/HLF-MedicalDecentrilazation" class="blue-text">View Repo</a>
           </div>
         </div>
       </div>
-      <!-- Add more repo cards as needed -->
+      <!-- Add more repo cards -->
     </div>
   </section>
 
@@ -103,8 +113,8 @@
   <section id="contact" class="section grey lighten-4">
     <div class="container">
       <h4>Contact</h4>
-      <p><i class="material-icons">link</i> LinkedIn: <a href="https://linkedin.com/in/satya-venkata-medhi-t">satya-venkata-medhi-t</a></p>
-      <p><i class="material-icons">code</i> GitHub: <a href="https://github.com/satyamadhav44">satyamadhav44</a></p>
+      <p><i class="material-icons blue-text">link</i> LinkedIn: <a href="https://linkedin.com/in/satya-venkata-medhi-t">satya-venkata-medhi-t</a></p>
+      <p><i class="material-icons red-text">code</i> GitHub: <a href="https://github.com/satyamadhav44">satyamadhav44</a></p>
     </div>
   </section>
 
@@ -113,7 +123,7 @@
     <p>&copy; 2026 Satya Theegela</p>
   </footer>
 
-  <!-- Import Materialize JS -->
+  <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
