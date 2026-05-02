@@ -4,69 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Satya Theegela - Developer Portfolio</title>
+  <!-- Import Google Icon Font and Materialize CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #222; color: #fff; padding: 20px; text-align: center; }
-    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
-    section { padding: 20px; }
-    h2 { color: #333; }
-    .repo-list { list-style: none; padding: 0; }
-    .repo-list li { margin: 10px 0; }
-    footer { background: #222; color: #fff; text-align: center; padding: 10px; }
+    header, footer { background: #212121; color: #fff; }
+    .section { padding: 4rem 0; }
+    .repo-card { margin-bottom: 20px; }
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- Navbar -->
+  <nav class="black">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo">Satya</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#repos">Repositories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="section center-align">
     <h1>Satya Theegela</h1>
-    <p>Senior Software Engineer | Java, Security, Cloud</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#repos">Repositories</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Senior Software Engineer | Java | Security | Cloud</p>
+    <a href="#repos" class="btn waves-effect waves-light deep-purple">View My Work</a>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
+  <!-- About -->
+  <section id="about" class="section container">
+    <h4>About Me</h4>
     <p>
-      I am an avid software developer with over 8 years of expertise in Java and related frameworks,
-      specializing in scalable, high-performance applications. I have strong domain knowledge in banking
-      and extensive cloud expertise (AWS, OpenShift).
+      I am a Senior Software Engineer specializing in Java, security, and identity/access management.
+      I also enjoy creative direction for branding and event assets, blending technical and artistic roles.
     </p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java (Spring Boot, JPA, Microservices)</li>
-      <li>Frontend: AngularJS, ReactJS</li>
-      <li>Cloud: AWS (EC2, S3, EKS, RDS), OpenShift</li>
-      <li>Databases: MySQL, PostgreSQL, Oracle</li>
-      <li>Middleware: Apache Kafka</li>
-      <li>Blockchain: Certified Developer (Emurgo Academy)</li>
-    </ul>
+  <!-- Skills -->
+  <section id="skills" class="section grey lighten-4">
+    <div class="container">
+      <h4>Skills</h4>
+      <div class="row">
+        <div class="col s6 m4"><i class="material-icons">code</i> Java, Spring Boot</div>
+        <div class="col s6 m4"><i class="material-icons">web</i> AngularJS, ReactJS</div>
+        <div class="col s6 m4"><i class="material-icons">cloud</i> AWS, OpenShift</div>
+        <div class="col s6 m4"><i class="material-icons">storage</i> MySQL, PostgreSQL, Oracle</div>
+        <div class="col s6 m4"><i class="material-icons">sync</i> Apache Kafka</div>
+        <div class="col s6 m4"><i class="material-icons">security</i> Blockchain (Emurgo Certified)</div>
+      </div>
+    </div>
   </section>
 
-  <section id="repos">
-    <h2>Popular Repositories</h2>
-    <ul class="repo-list">
-      <li><a href="https://github.com/satyamadhav44/Solidity-Projects">Solidity-Projects</a> - Smart contract code samples</li>
-      <li><a href="https://github.com/satyamadhav44/HLF-MedicalDecentrilazation">HLF-MedicalDecentrilazation</a> - Consortium blockchain for healthcare</li>
-      <li><a href="https://github.com/satyamadhav44/digital-health-wallet">Digital Health Wallet</a> - MAXathon hackathon project</li>
-      <li><a href="https://github.com/satyamadhav44/DesignPatterns">DesignPatterns</a> - Core Java design pattern examples</li>
-      <li><a href="https://github.com/satyamadhav44/EmployeeDataMngt">EmployeeDataMngt</a> - Sample code for Docker deployment</li>
-    </ul>
+  <!-- Repositories -->
+  <section id="repos" class="section container">
+    <h4>Featured Projects</h4>
+    <div class="row">
+      <div class="col s12 m6 repo-card">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Solidity-Projects</span>
+            <p>Smart contract code samples.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/satyamadhav44/Solidity-Projects">View Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 repo-card">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">HLF-MedicalDecentrilazation</span>
+            <p>Consortium blockchain for healthcare.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/satyamadhav44/HLF-MedicalDecentrilazation">View Repo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more repo cards as needed -->
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>LinkedIn: <a href="https://linkedin.com/in/satya-venkata-medhi-t">satya-venkata-medhi-t</a></p>
-    <p>GitHub: <a href="https://github.com/satyamadhav44">satyamadhav44</a></p>
+  <!-- Contact -->
+  <section id="contact" class="section grey lighten-4">
+    <div class="container">
+      <h4>Contact</h4>
+      <p><i class="material-icons">link</i> LinkedIn: <a href="https://linkedin.com/in/satya-venkata-medhi-t">satya-venkata-medhi-t</a></p>
+      <p><i class="material-icons">code</i> GitHub: <a href="https://github.com/satyamadhav44">satyamadhav44</a></p>
+    </div>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="center-align">
     <p>&copy; 2026 Satya Theegela</p>
   </footer>
+
+  <!-- Import Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
